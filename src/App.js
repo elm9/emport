@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Portfolio from './components/Portfolio';
 
-
 class App extends Component {
   render() {
     return (
@@ -10,4 +9,5 @@ class App extends Component {
   }
 }
 
+ 
 export default App;

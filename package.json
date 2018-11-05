@@ -8,6 +8,7 @@
     "react-fittext": "^1.0.0",
     "react-grid-system": "^4.3.1",
     "react-icons": "^3.2.2",
+    "react-native": "^0.57.4",
     "react-parallax": "^2.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
