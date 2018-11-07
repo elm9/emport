@@ -2,7 +2,14 @@ import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import { Parallax, Background } from 'react-parallax';
 import FitText from 'react-fittext';
-import Content from './Content';
+
+import GitHub from './images/github-logo.png';
+import ReplateImg from './images/replate.jpg';
+import AsyncImg from './images/async.jpg';
+import DemocracyImg from './images/DemNow.jpg';
+import MemeImg from './images/socialMemedia.jpg';
+import CodeImg from './images/codeReview.jpg';
+import StarWarsImg from './images/StarWars.jpg';
 
 
 const Portfolio = () => (
@@ -25,16 +32,14 @@ const Portfolio = () => (
         </Parallax>
         <Container style={{ padding: '20px'}}>
             <Row>
-                <FitText compressor={2}>
-                <Col sm={12} md={12} lg={12}><h2 style={{ fontFamily: "'Cinzel', serif", margin: '10px'}}>ABOUT ME</h2></Col>
-                </FitText>
-            </Row>
-            <Row>
                 <FitText compressor={2.5}>
-                <Col sm={12}>
-                    <p style={{ fontFamily: "'Montserrat', sans-serif" }}>I’m a full-stack web developer currently living in Northern Virginia. I have a culinary background, therefore I have an eye for quality products and a mind for streamlined functionality.</p>
+                <Col sm={10}>
+                    <p style={{ fontFamily: "'Montserrat', sans-serif", margin: '10px', padding: '10px' }}>I’m a full-stack web developer currently living in Northern Virginia. From my background in culinary arts I have an eye for quality products and a mind for streamlined functionality.</p>
                 </Col>
                 </FitText>
+                <Col sm={3} md={2} lg={2}>
+                    <a target="_blank" rel="noopener noreferrer" href='https://github.com/elm9' ><img style={{ width: '100px', margin: '10px', padding: '10px', alignContent:'center' }} src={GitHub} /></a>
+                </Col>
             </Row>
         </Container>
         <Parallax
@@ -127,10 +132,42 @@ const Portfolio = () => (
                 <FitText compressor={2}>
                 <Col sm={12} md={12} lg={12}><h2 style={{ fontFamily: "'Cinzel', serif", margin: '10px'}}>PORTFOLIO</h2></Col>
                 </FitText>
+           
+                <Col sm={12} md={6} lg={4} >
+                    <a target="_blank" rel="noopener noreferrer" href='https://replate.herokuapp.com/'>
+                        <img src={ReplateImg} style={{ height: '300px', width: '300px', padding: '25px' }} resizeMode="contain" />
+                    </a>
+                </Col>
+                <Col sm={12} md={6} lg={4} >
+                    <a target="_blank" rel="noopener noreferrer" href='https://all-things-async.herokuapp.com/'>
+                        <img src={AsyncImg} style={{ height: '300px', width: '300px', padding: '25px' }} resizeMode="contain"/>
+                    </a>
+                </Col>
+           
+                <Col sm={12} md={6} lg={4} >
+                    <a target="_blank" rel="noopener noreferrer" href='https://sheltered-scrubland-82709.herokuapp.com/index.html'>
+                        <img src={DemocracyImg} style={{ height: '300px', width: '300px', padding: '25px' }} resizeMode="contain"/>
+                    </a>
+                </Col>
+                <Col sm={12} md={6} lg={4} >
+                    <a target="_blank" rel="noopener noreferrer" href='https://salty-waters-21692.herokuapp.com/'>
+                        <img src={MemeImg} style={{ height: '300px', width: '300px', padding: '25px' }} resizeMode="contain"/>
+                    </a>
+                </Col>
+            
+                <Col sm={12} md={6} lg={4} >
+                    <a target="_blank" rel="noopener noreferrer" href='https://elm9.github.io/Code_Review_Tool/'>
+                        <img src={CodeImg} style={{ height: '300px', width: '300px', padding: '25px' }} resizeMode="contain"/>
+                    </a>
+                </Col>
+                <Col sm={12} md={6} lg={4} >
+                    <a target="_blank" rel="noopener noreferrer" href='https://elm9.github.io/RPGGame_StarWars/'>
+                        <img src={StarWarsImg} style={{ height: '300px', width: '300px', padding: '25px' }} resizeMode="contain"/>
+                    </a>
+                </Col>
             </Row>
-            <Content />
         </Container>
-
+        
         <Parallax
             bgImage={require('./images/5.jpg')}
             bgImageAlt='an arial view of red rooftops'
