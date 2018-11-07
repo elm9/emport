@@ -2,16 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import { Parallax, Background } from 'react-parallax';
 import FitText from 'react-fittext';
-import Async from './images/async.jpg';
-import Async2 from './images/async2.jpg';
-import Meme from './images/socialmemedia.jpg';
-import Meme2 from './images/socialmemedia2.jpg';
-import Democracy from './images/democracy.jpg';
-import Democracy2 from './images/democracy2.jpg';
-import CodeReview from './images/codereview.jpg';
-import CodeReview2 from './images/codereview2.jpg';
-import StarWars from './images/starwars.jpg';
-import StarWars2 from './images/starwars2.jpg';
+import Content from './Content';
+
 
 const Portfolio = () => (
     <div style={{ backgroundColor: 'rgba(246, 241, 182, 0.17)' }}>
@@ -40,7 +32,7 @@ const Portfolio = () => (
             <Row>
                 <FitText compressor={2.5}>
                 <Col sm={12}>
-                    <p style={{ fontFamily: "'Montserrat', sans-serif" }}>I’m a full-stack web developer currently living in Northern Virginia. I have a culinary background and I have retooled to create beautiful, dynamic, and user-friendly websites. I earned a certificate from the George Washington University School of Professional Studies in Full-Stack Web Development.</p>
+                    <p style={{ fontFamily: "'Montserrat', sans-serif" }}>I’m a full-stack web developer currently living in Northern Virginia. I have a culinary background, therefore I have an eye for quality products and a mind for streamlined functionality.</p>
                 </Col>
                 </FitText>
             </Row>
@@ -59,9 +51,34 @@ const Portfolio = () => (
                 </FitText>
             </Row>
             <Row>
-                <FitText compressor={3}>
-                <Col sm={12}>
-                    <p style={{ fontFamily: "'Montserrat', sans-serif", }}>Browser Based Technologies (JavaScript, HTML5, CSS3, jQuery), Website Deployment (AWS, Heroku, GitHub), Databases (MySQL, MongoDB), Server-side Development (Node.JS, React, Express.js), ES6, Git, NPM, Yarn, Bootstrap</p>
+                <FitText compressor={1.5}>
+                <Col sm={4}>
+                    <ul style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>jQuery</li>
+                    </ul>
+                </Col>
+                </FitText>
+                <FitText compressor={1.5}>
+                <Col sm={4}>
+                    <ul style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </Col>
+                </FitText>
+                <FitText compressor={1.5}>
+                <Col sm={4}>
+                    <ul style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <li>MySQL</li>
+                        <li>Heroku</li>
+                        <li>Bootstrap</li>
+                        <li>S3 and Route 53</li>
+                    </ul>
                 </Col>
                 </FitText>
             </Row>
@@ -74,160 +91,28 @@ const Portfolio = () => (
         <div style={{height: '800px'}} />
         </Parallax>
 
-        {/* PORTFOLIO */}
-        <Container style={{ padding: '20px'}}>
+        <Container style={{ padding: '20px' }}>
             <Row>
                 <FitText compressor={2}>
-                <Col sm={12} md={12} lg={12}><h2 style={{ fontFamily: "'Cinzel', serif", margin: '10px'}}>PORTFOLIO</h2></Col>
+                <Col sm={12} md={12} lg={12}><h2 style={{ fontFamily: "'Cinzel', serif", margin: '10px'}}>CERTIFICATION</h2></Col>
                 </FitText>
             </Row>
-
-            <Container style={{ padding: '10px', margin: '5px', backgroundColor:'rgba(246, 241, 182, 0.43)' }}>
-                
-                <Row>
-                    <Col sm={12}>
-                    <FitText compressor={3}>
-                    <h3 style={{ fontFamily: "'Cinzel', serif", margin: '10px' }} >Asyncronous Functions Demonstration</h3>
-                    </FitText>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <img  style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={Async} resizeMode="contain" />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <FitText compressor={3.5}>
-                        <p style={{ fontFamily: "'Montserrat', sans-serif" }} >about</p>
-                        </FitText>
-                    </Col>
-                </Row>
-                <Row>   
-                    <Col sm={12}>
-                        <img style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={Async2} />
-                    </Col>
-                </Row>
-               
-            </Container>
-
-            <Container style={{ padding: '10px', margin: '5px', backgroundColor:'rgba(246, 241, 182, 0.43)' }}>
-                
-                <Row>
-                    <Col sm={12}>
-                    <FitText compressor={3}>
-                    <h3 style={{ fontFamily: "'Cinzel', serif", margin: '10px' }} >Social Memedia</h3>
-                    </FitText>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <img  style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={Meme} />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <FitText compressor={3.5}>
-                        <p style={{ fontFamily: "'Montserrat', sans-serif" }} >about</p>
-                        </FitText>
-                    </Col>
-                </Row>
-                <Row>   
-                    <Col sm={12}>
-                        <img style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={Meme2} />
-                    </Col>
-                </Row>
-               
-            </Container>
-
-            <Container style={{ padding: '10px', margin: '5px', backgroundColor:'rgba(246, 241, 182, 0.43)' }}>
-                
-                <Row>
-                    <Col sm={12}>
-                    <FitText compressor={3}>
-                    <h3 style={{ fontFamily: "'Cinzel', serif", margin: '10px' }} >Democracy For Sale</h3>
-                    </FitText>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <img  style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={Democracy} />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <FitText compressor={3.5}>
-                        <p style={{ fontFamily: "'Montserrat', sans-serif" }} >about</p>
-                        </FitText>
-                    </Col>
-                </Row>
-                <Row>   
-                    <Col sm={12}>
-                        <img style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={Democracy2} />
-                    </Col>
-                </Row>
-               
-            </Container>
-
-            <Container style={{ padding: '10px', margin: '5px', backgroundColor:'rgba(246, 241, 182, 0.43)' }}>
-                
-                <Row>
-                    <Col sm={12}>
-                    <FitText compressor={3}>
-                    <h3 style={{ fontFamily: "'Cinzel', serif", margin: '10px' }} >Code Review Tool</h3>
-                    </FitText>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <img  style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={CodeReview} />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <FitText compressor={3.5}>
-                        <p style={{ fontFamily: "'Montserrat', sans-serif" }} >about</p>
-                        </FitText>
-                    </Col>
-                </Row>
-                <Row>   
-                    <Col sm={12}>
-                        <img style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={CodeReview2} />
-                    </Col>
-                </Row>
-               
-            </Container>
-
-            <Container style={{ padding: '10px', margin: '5px', backgroundColor:'rgba(246, 241, 182, 0.43)' }}>
-                
-                <Row>
-                    <Col sm={12}>
-                    <FitText compressor={3}>
-                    <h3 style={{ fontFamily: "'Cinzel', serif", margin: '10px' }} >Star Wars RPG Game</h3>
-                    </FitText>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <img  style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={StarWars} />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={12}>
-                        <FitText compressor={3.5}>
-                        <p style={{ fontFamily: "'Montserrat', sans-serif" }} >about</p>
-                        </FitText>
-                    </Col>
-                </Row>
-                <Row>   
-                    <Col sm={12}>
-                        <img style={{ width: '95%', margin: '10px', border: '10px', padding: '10px', alignContent:'center'}} src={StarWars2} />
-                    </Col>
-                </Row>
-               
-            </Container>
+            <Row>
+                <FitText compressor={3}>
+                <Col sm={12}>
+                <br /> <br/>
+                <p style={{ fontFamily: "'Montserrat', sans-serif", border: 'groove', borderColor: 'gold', margin: '20px', padding: '20px', textAlign: 'center' }} >
+                    <big>The George Washington <br /> College of Professional Studies</big>
+                    <br />
+                    <italic>Full Stack Web Development Program</italic>
+                    <br />
+                    <small>August - November 2018</small>
+                </p>
+                <br />
+                </Col>
+                </FitText>
+            </Row>
         </Container>
-
 
         <Parallax
             bgImage={require('./images/4.jpg')}
@@ -236,14 +121,16 @@ const Portfolio = () => (
         >
         <div style={{height: '800px'}} />
         </Parallax>
-        <Container style={{ padding: '20px', alignContent: 'center'}}>
-            <Row style={{ align: 'center' }}>
+                {/* PORTFOLIO */}
+        <Container style={{ padding: '20px'}}>
+            <Row>
                 <FitText compressor={2}>
-                <Col sm={12}><a target="_blank" rel="noopener noreferrer" href='https://github.com/elm9'> <h2 style={{ fontFamily: "'Cinzel', serif", margin: '10px', textAlign: 'center'}}>GitHub</h2></a></Col>
-                {/* <Col sm={12} ><a style={{ textAlign: 'center', margin: '20px' }} href='https://github.com/elm9'> <img style={{ width: '70px' }} src={GitHubLogo} /> </a></Col> */}
+                <Col sm={12} md={12} lg={12}><h2 style={{ fontFamily: "'Cinzel', serif", margin: '10px'}}>PORTFOLIO</h2></Col>
                 </FitText>
             </Row>
+            <Content />
         </Container>
+
         <Parallax
             bgImage={require('./images/5.jpg')}
             bgImageAlt='an arial view of red rooftops'
@@ -253,7 +140,8 @@ const Portfolio = () => (
         </Parallax>
         <Container>
             <Row>
-                <Col sm={12} md={12} lg={12}><p style={{fontSize: 'small', textAlign: 'center'}}>Images by <a href={'https://www.pexels.com/@pok-rie-33563'}>Pok Rie</a></p></Col>
+                <Col sm={6}><a target="_blank" rel="noopener noreferrer" href='https://github.com/elm9'> <h2 style={{ fontFamily: "'Cinzel', serif", margin: '10px', textAlign: 'start'}}>GitHub</h2></a></Col>
+                <Col sm={6}><p style={{fontSize: 'small', textAlign: 'end'}}>Images by <a href={'https://www.pexels.com/@pok-rie-33563'}>Pok Rie</a></p></Col>
             </Row>
         </Container>
     </div>
